@@ -95,41 +95,6 @@
 .badge.amber { background: var(--amber-dim); color: var(--amber); }
 .badge.green { background: rgba(102, 217, 142, 0.15); color: var(--green); }
 
-/* ── Logo Bar (top right) ── */
-.logo-bar {
-  position: absolute;
-  top: 24px;
-  right: 40px;
-  display: flex;
-  gap: 16px;
-  z-index: 10;
-}
-
-.slide-logo {
-  height: 45px;
-  width: auto;
-  object-fit: contain;
-  opacity: 0.8;
-  border-radius: 4px;
-}
-
-/* ── Logo Bar (bottom) ── */
-.logo-bar-bottom {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  z-index: 10;
-}
-
-.logo-bar-bottom img {
-  height: 35px;
-  width: auto;
-  object-fit: contain;
-  opacity: 0.7;
-}
 
 /* ── Text Alignment ── */
 .text-center { text-align: center; }
@@ -247,31 +212,24 @@
      SLIDE 1: TITLE SLIDE
      ════════════════════════════════════════════════════════════════════════ -->
 <section data-background-color="var(--bg-dark)">
-  <div class="logo-bar">
-    <img src="assets/ulb_logo_white.png" alt="ULB" class="slide-logo">
-    <img src="assets/mlg.png" alt="MLG" class="slide-logo">
-    <img src="assets/welt.jpg" alt="WELT" class="slide-logo">
-  </div>
-
   <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <h1 style="color: var(--teal); margin-bottom: 0.3em;">Presentation Title</h1>
     <p class="subtitle">Subtitle or tagline goes here</p>
 
-    <div style="margin-top: 30px; margin-bottom: 40px;">
+    <div style="margin-top: 30px; margin-bottom: 20px;">
       <span class="badge teal">Tag 1</span>
       <span class="badge teal">Tag 2</span>
       <span class="badge teal">Tag 3</span>
     </div>
-  </div>
 
-  <div style="position: absolute; bottom: 30px; left: 0; right: 0; text-align: center; color: var(--gray-dim); font-size: 0.8em;">
-    Author Name  ·  Date  ·  Organization
-  </div>
+    <p style="color: var(--gray-dim); font-size: 0.7em; margin-top: 10px;">
+      Author Name  ·  Date  ·  Organization
+    </p>
 
-  <div class="logo-bar-bottom">
-    <img src="assets/ulb_logo_white.png" alt="ULB">
-    <img src="assets/mlg.png" alt="MLG">
-    <img src="assets/welt.jpg" alt="WELT">
+    <div style="display:flex; align-items:center; gap:80px; margin-top:40px;">
+      <img src="assets/mlg.png" alt="MLG" style="height:55px; mix-blend-mode:screen;">
+      <img src="assets/welt.png" alt="Wel-T" style="height:66px;">
+    </div>
   </div>
 </section>
 
