@@ -46,6 +46,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .reveal pre { width: 100%; font-size: 0.55em; }
@@ -183,7 +185,8 @@
   justify-content: center;
   color: var(--gray-dim);
   font-size: 1.2em;
-  aspect-ratio: 1;
+  aspect-ratio: 4/3;
+  max-height: 340px;
   margin: 20px 0;
 }
 
@@ -211,25 +214,23 @@
 <!-- ════════════════════════════════════════════════════════════════════════
      SLIDE 1: TITLE SLIDE
      ════════════════════════════════════════════════════════════════════════ -->
-<section data-background-color="var(--bg-dark)">
-  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-    <h1 style="color: var(--teal); margin-bottom: 0.3em;">Presentation Title</h1>
-    <p class="subtitle">Subtitle or tagline goes here</p>
+<section data-background-color="var(--bg-dark)" style="align-items: center; text-align: center;">
+  <h1 style="color: var(--teal); margin-bottom: 0.3em;">Presentation Title</h1>
+  <p class="subtitle">Subtitle or tagline goes here</p>
 
-    <div style="margin-top: 30px; margin-bottom: 20px;">
-      <span class="badge teal">Tag 1</span>
-      <span class="badge teal">Tag 2</span>
-      <span class="badge teal">Tag 3</span>
-    </div>
+  <div style="margin-top: 30px; margin-bottom: 20px;">
+    <span class="badge teal">Tag 1</span>
+    <span class="badge teal">Tag 2</span>
+    <span class="badge teal">Tag 3</span>
+  </div>
 
-    <p style="color: var(--gray-dim); font-size: 0.7em; margin-top: 10px;">
-      Author Name  ·  Date  ·  Organization
-    </p>
+  <p style="color: var(--gray-dim); font-size: 0.7em; margin-top: 10px;">
+    Author Name  ·  Date  ·  Organization
+  </p>
 
-    <div style="display:flex; align-items:center; gap:80px; margin-top:40px;">
-      <img src="assets/mlg.png" alt="MLG" style="height:55px; mix-blend-mode:screen;">
-      <img src="assets/welt.png" alt="Wel-T" style="height:66px;">
-    </div>
+  <div style="display:flex; align-items:center; gap:80px; margin-top:40px; justify-content: center;">
+    <img src="assets/mlg.png" alt="MLG" style="height:55px; mix-blend-mode:screen;">
+    <img src="assets/welt.png" alt="Wel-T" style="height:66px;">
   </div>
 </section>
 
@@ -362,7 +363,7 @@
   <h2 style="color: var(--teal);">Text + Image Layout</h2>
   <hr class="divider">
 
-  <div style="display: flex; gap: 40px; margin-top: 30px; align-items: flex-start;">
+  <div style="display: flex; gap: 40px; margin-top: 30px; align-items: center; overflow: hidden;">
     <!-- Left: Text -->
     <div style="flex: 1; text-align: left;">
       <p style="font-size: 0.95em; color: var(--gray); line-height: 1.8; margin-bottom: 20px;">
